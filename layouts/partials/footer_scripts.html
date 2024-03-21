@@ -14,11 +14,11 @@
     if (key === "h") {
       e.preventDefault();
       e.stopPropagation();
-      window.location.href = baseURL;
+      window.location.href = {{ .Site.BaseURL }};
     } else if (key === "t") {
       e.preventDefault();
       e.stopPropagation();
-      window.location.href = baseURL`/tags`;
+      window.location.href = {{ .Site.BaseURL }} +`/tags`;
     } else if (key === "e") {
       e.preventDefault();
       e.stopPropagation();
